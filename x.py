@@ -12,7 +12,8 @@ commands = {
     "shutdown": "Shuts down the system.",
     "whoami": "Shows what user you are logged on as and the computer name for the user.",
     "lock": "Locks your PC.",
-    "ver": "Shows the version for this PC."
+    "ver": "Shows the version for this PC.",
+    "githubprofile": "Shows my GitHub profile."
 }
 
 user1 = "Admin"
@@ -92,8 +93,9 @@ while True:
             else:
                 print("py-system unlocked.")
                 logged_in = True
-          elif command == "ver"
-              print("py-system ver 0.1 beta")
-        
+        elif command == "ver":  # Ensure this line is indented at the same level as the other elif blocks
+            print("py-system ver 0.1 beta")
+        elif command == "githubprofile":
+            print(f"https://github.com/spree124")
         else:
             print("Unknown command. Type 'help' for a list of commands.")
